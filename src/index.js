@@ -1,14 +1,19 @@
-import React from 'react';
+import React , {StrictMode, Fragment}from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Card from './card/Card'
 import reportWebVitals from './reportWebVitals';
+import {robots} from "./objects/robots";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <StrictMode>
+        <Fragment>
+            <Card id={robots[0].id} name={robots[0].name} email={robots[0].email}/>
+            <Card id={robots[1].id} name={robots[1].name} email={robots[1].email}/>
+            <Card id={robots[2].id} name={robots[2].name} email={robots[2].email}/>
+        </Fragment>
+    </StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
