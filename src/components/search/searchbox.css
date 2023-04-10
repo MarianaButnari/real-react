@@ -1,0 +1,14 @@
+.Input {
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Input input {
+    height: 3em;
+    width: 30em;
+    background-color: #0ccac4;
+    border: none;
+    border-radius: 1em;
+}
