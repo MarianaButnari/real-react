@@ -13,10 +13,11 @@ export default class App extends Component {
             searchField: ''
         }
     }
+
     componentDidMount() {
         // this.setState({robots: robots});
         fetch('https://jsonplaceholder.typicode.com/users').then(response => {
-          return response.json();
+            return response.json();
         }).then(users => {
             this.setState({robots: users});
         })
@@ -27,22 +28,18 @@ export default class App extends Component {
     }
 
     render() {
-        const filteredRobots = this.state.robots.filter(robot => {
-            return robot.name.toLowerCase().includes(this.state.searchField.toLowerCase());
+        const {robots, searchField} = this.state;
+        const filteredRobots = robots.filter(robot => {
+            return robot.name.toLowerCase().includes(searchField.toLowerCase());
         });
-        if (this.state.robots.length === 0) {
-            return <h1>Loading...</h1>
-        } else
-            return (
-                <Fragment>
-                    <h1>RoboFriends</h1>
-                    <SearchBox searchChange={this.onSearchChange}/>
-                    <Scroll>
-                        <CardList robots={filteredRobots}></CardList>
-                    </Scroll>
-                </Fragment>
-            )
+        return !robots.length ? <h1>Loading...</h1> : (
+            <Fragment>
+                <h1>RoboFriends</h1>
+                <SearchBox searchChange={this.onSearchChange}/>
+                <Scroll>
+                    <CardList robots={filteredRobots}></CardList>
+                </Scroll>
+            </Fragment>
+        )
     }
-
-
 }
