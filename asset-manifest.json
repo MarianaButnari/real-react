@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/real-react/static/css/main.64d90219.css",
+    "main.js": "/real-react/static/js/main.90b12b60.js",
+    "static/js/787.b467c0c7.chunk.js": "/real-react/static/js/787.b467c0c7.chunk.js",
+    "static/media/SEGA.woff": "/real-react/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
+    "index.html": "/real-react/index.html",
+    "main.64d90219.css.map": "/real-react/static/css/main.64d90219.css.map",
+    "main.90b12b60.js.map": "/real-react/static/js/main.90b12b60.js.map",
+    "787.b467c0c7.chunk.js.map": "/real-react/static/js/787.b467c0c7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64d90219.css",
+    "static/js/main.90b12b60.js"
+  ]
+}
