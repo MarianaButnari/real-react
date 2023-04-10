@@ -12,9 +12,9 @@ export default class CardList extends Component {
         //                  email={this.props.robots[index].email}
         //     />
         // });
-        if (true) {
-            throw new Error('OOOOOOMMMGGGG');
-        }
+        // if (true) {
+        //     throw new Error('OOOOOOMMMGGGG');
+        // }
         return (
             <div className="CardList">
                 {/*{cardComponent}*/}
